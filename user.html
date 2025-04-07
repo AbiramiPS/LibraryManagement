@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+  <title>Bookabank Management System</title>
+  <link href="admin.css" rel="stylesheet" type="text/css"  />
+  <script src="admin.js"></script>
+</head>
+<body>
+  
+  <div class="tab">
+    <a href="#" class="logo">
+      <img src="logo1.jpg">
+    </a>
+    
+  <h4>STUDENTS BOOK BANK</h4>
+  <button class="tablinks" onclick="openCity(event, 'search')">SEARCH BOOK</button>
+  <button class="tablinks" onclick="openCity(event, 'request')">REQUEST BOOK</button>
+  <button class="tablinks" onclick="openCity(event, 'select')">SELECT BOOKS</button>
+  <button class="tablinks" onclick="openCity(event, 'pay')">PAY AMOUNT</button>
+  <a href="login.php" class="hey"><strong>Log Out</strong></a>
+</div>
+
+<div id="search" class="tabcontent">
+  
+    <section>
+    <h1><b>SEARCH BOOK</h1></b>
+    <label> Enter the title of the book:&emsp;&emsp;<br><br>
+    
+      <form action="" method="GET">
+        <div class="search">
+            <input type="text" name="search" required value="<?php if(isset($_GET['search'])){echo $_GET['search']; } ?>" class="form-control" placeholder="Search data">
+            <button type="submit" class="searchbtn">Search</button>
+        </div>
+    </form>
+  </div>
+
+<div id="request" class="tabcontent">
+  <form action="requestbook.php" method="POST">
+  <section>
+    <h1><b>REQUEST BOOK</h1></b>
+    <label> Title:&emsp;&ensp;
+      <input id="title" placeholder="Enter book title" name="title" type="text" style="height: 35px; width: 200px; border-radius: 5px;">
+    </label><br><br>
+
+    <label> Author:&ensp;
+      <input type="text" placeholder="Enter Author Name" name="author" style="height: 35px; width: 200px; border-radius: 5px;">
+    </label><br><br>
+
+    <label> ISBN:&emsp;
+      <input type="text" placeholder="Enter ISBN" name="ISBN" style="height: 35px; width: 200px; border-radius: 5px;">
+    </label><br><br>
+
+    
+    <div class=req>
+          <input type="submit" name="login" value="DELETE BOOK" class="btn_css"> 
+    </div> 
+   </section>
+  </form>
+ 
+</div>
+
+<div id="select" class="tabcontent">
+<h>sdfghyjukl;</h>
+</div>
+
+<div id="pay" class="tabcontent">
+  <h3>Amount</h3>
+  <p>payyyyyyyyyy Amount </p>
+</div>
+
+
+ </body>
+ </html>
+ 
